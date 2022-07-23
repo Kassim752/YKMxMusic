@@ -5,13 +5,13 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
 from strings import get_command
-from AnonX import app
-from AnonX.core.call import Anon
-from AnonX.misc import db
-from AnonX.utils.database import get_authuser_names, get_cmode
-from AnonX.utils.decorators import (ActualAdminCB, AdminActual,
+from LegendX import app
+from LegendX.core.call import Legend
+from LegendX.misc import db
+from LegendX.utils.database import get_authuser_names, get_cmode
+from LegendX.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from AnonX.utils.formatters import alpha_to_int
+from LegendX.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
@@ -60,7 +60,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Anon.stop_stream(message.chat.id)
+        await Legend.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -71,7 +71,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Anon.stop_stream(chat_id)
+            await Legend.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(
