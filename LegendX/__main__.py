@@ -24,7 +24,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER("LegendX").error(
-            "WTF Baby ! Atleast add a pyrogram string, How Cheap..."
+            "No Assistant Clients Vars Defined!.. Exiting Process.."
         )
         return
     if (
@@ -32,7 +32,7 @@ async def init():
         and not config.SPOTIFY_CLIENT_SECRET
     ):
         LOGGER("LegendX").warning(
-            "Spotify Client Id & Secret not added, Chutiya Saala ek itni simple cheej nahi laa paaya."
+            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
     try:
         users = await get_gbanned()
@@ -57,7 +57,7 @@ async def init():
         )
     except NoActiveGroupCall:
         LOGGER("LegendX").error(
-            "[ERROR] - \n\nHey Baby, firstly open telegram and turn on voice chat in Logger Group else fu*k off. If you ever ended voice chat in log group i will stop working and users will fu*k you up."
+            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group."
         )
         sys.exit()
     except:
