@@ -23,7 +23,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = Legendbottx()
+app = AnonXBot()
 
 # Assistant Client
 userbot = Userbot()
