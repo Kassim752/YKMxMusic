@@ -3,7 +3,7 @@ from AnonX.core.dir import dirr
 from AnonX.core.git import git
 from AnonX.core.userbot import Userbot
 from AnonX.misc import dbb, heroku, sudo
-from aiohttp import ClientSession
+from AnonX import ClientSession
 
 from .logging import LOGGER
 
