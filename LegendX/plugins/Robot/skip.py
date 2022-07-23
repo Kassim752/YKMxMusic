@@ -4,15 +4,15 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from AnonX import YouTube, app
-from AnonX.core.call import Anon
-from AnonX.misc import db
-from AnonX.utils.database import get_loop
-from AnonX.utils.decorators import AdminRightsCheck
-from AnonX.utils.inline.play import (stream_markup,
+from LegendX import YouTube, app
+from LegendX.core.call import Anon
+from LegendX.misc import db
+from LegendX.utils.database import get_loop
+from LegendX.utils.decorators import AdminRightsCheck
+from LegendX.utils.inline.play import (stream_markup,
                                           telegram_markup)
-from AnonX.utils.stream.autoclear import auto_clean
-from AnonX.utils.thumbnails import gen_thumb
+from LegendX.utils.stream.autoclear import auto_clean
+from LegendX.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -158,7 +158,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Anon.skip_stream(chat_id, videoid, video=status)
+            await Legend.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -171,7 +171,7 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["markup"] = "tg"
     else:
         try:
-            await Anon.skip_stream(chat_id, queued, video=status)
+            await Legend.skip_stream(chat_id, queued, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":
