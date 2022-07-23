@@ -1,9 +1,9 @@
-from AnonX.core.bot import AnonXBot
-from AnonX.core.dir import dirr
-from AnonX.core.git import git
-from AnonX.core.userbot import Userbot
-from AnonX.misc import dbb, heroku, sudo
-from AnonX import ClientSession
+from LegendX.core.bot import LegendXMusic
+from LegendX.core.dir import dirr
+from LegendX.core.git import git
+from LegendX.core.userbot import Userbot
+from LegendX.misc import dbb, heroku, sudo
+from aioht import ClientSession
 
 from .logging import LOGGER
 
@@ -23,7 +23,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = AnonXBot()
+app = LegendXMusic()
 
 # Assistant Client
 userbot = Userbot()
