@@ -9,14 +9,14 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from AnonX import app
-from AnonX.misc import db
-from AnonX.utils import (Anonbin, get_channeplayCB,
+from LegendX import app
+from LegendX.misc import db
+from LegendX.utils import (LegendXbin, get_channeplayCB,
                               seconds_to_min)
-from AnonX.utils.database import (get_cmode, is_active_chat,
+from LegendX.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from AnonX.utils.decorators.language import language, languageCB
-from AnonX.utils.inline import queue_back_markup, queue_markup
+from LegendX.utils.decorators.language import language, languageCB
+from LegendX.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -97,7 +97,7 @@ async def ping_com(client, message: Message, _):
 📌**ᴛɪᴛʟᴇ:** {title}
 
 🍒**ᴛʏᴩᴇ:** {typo}
-💖**ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:** {user}
+💔**ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, "c" if cplay else "g", videoid)
@@ -277,7 +277,7 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
 📌 **ᴛɪᴛʟᴇ:** {title}
 
 🍒 **ᴛʏᴩᴇ:** {typo}
-💖 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:** {user}
+💔 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ:** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, cplay, videoid)
