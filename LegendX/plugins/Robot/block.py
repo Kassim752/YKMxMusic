@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from AnonX import app
-from AnonX.misc import SUDOERS
-from AnonX.utils.database import add_gban_user, remove_gban_user
-from AnonX.utils.decorators.language import language
+from LegendX import app
+from LegendX.misc import SUDOERS
+from LegendX.utils.database import add_gban_user, remove_gban_user
+from LegendX.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")
