@@ -2,9 +2,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from AnonX import app
-from AnonX.core.call import Anon, autoend
-from AnonX.utils.database import (get_client, is_active_chat,
+from LegendX import app
+from LegendX.core.call import Legend, autoend
+from LegendX.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -13,7 +13,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from AnonX.core.userbot import assistants
+            from LegendX.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -58,7 +58,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Anon.stop_stream(chat_id)
+                    await Legend.stop_stream(chat_id)
                 except:
                     continue
                 try:
