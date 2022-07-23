@@ -3,11 +3,11 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from AnonX import app
-from AnonX.utils.database import (get_playmode, get_playtype,
+from LegendX import app
+from LegendX.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from AnonX.utils.decorators import language
-from AnonX.utils.inline.settings import playmode_users_markup
+from LegendX.utils.decorators import language
+from LegendX.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
