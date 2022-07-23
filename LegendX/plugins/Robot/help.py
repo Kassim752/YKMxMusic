@@ -6,13 +6,13 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command, get_string, helpers
-from AnonX import app
-from AnonX.misc import SUDOERS
-from AnonX.utils import help_pannel
-from AnonX.utils.database import get_lang, is_commanddelete_on
-from AnonX.utils.decorators.language import (LanguageStart,
+from LegendX import app
+from LegendX.misc import SUDOERS
+from LegendX.utils import help_pannel
+from LegendX.utils.database import get_lang, is_commanddelete_on
+from LegendX.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from AnonX.utils.inline.help import (help_back_markup,
+from LegendX.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command
@@ -59,7 +59,7 @@ async def helper_private(
         language = await get_lang(chat_id)
         _ = get_string(language)
         keyboard = help_pannel(_)
-        await update.reply_sticker("CAACAgUAAxkBAAIjVmKPYTFByKZlCo9d8mUv8QVAJEw7AAL9BQACiy14VGoQxOCDfE1KJAQ")
+        await update.reply_sticker("CAACAgUAAx0CYAv6_wACMNFi3Djjyf3FxlT78uHhotHikf5XBQACNgMAAvUtoFez9R7zgWeMux4E")
         await update.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["help_1"], reply_markup=keyboard)
