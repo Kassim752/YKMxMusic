@@ -2,10 +2,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from AnonX import app
-from AnonX.misc import SUDOERS
-from AnonX.utils.database import set_video_limit
-from AnonX.utils.decorators.language import language
+from LegendX import app
+from LegendX.misc import SUDOERS
+from LegendX.utils.database import set_video_limit
+from LegendX.utils.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 
