@@ -12,7 +12,7 @@ from strings import get_command, get_string
 from LegendX import Telegram, YouTube, app
 from LegendX.misc import SUDOERS
 from LegendX.plugins.Robot.playlist import del_plist_msg
-from AnonX.plugins.Robot.sudoers import sudoers_list
+from LegendX.plugins.Robot.sudoers import sudoers_list
 from LegendX.utils.database import (add_served_chat,
                                        add_served_user,
                                        blacklisted_chats,
