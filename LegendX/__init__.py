@@ -1,4 +1,4 @@
-from LegendX.core.bot import LegendXBot
+from LegendX.core.bot import Legendbott
 from LegendX.core.dir import dirr
 from LegendX.core.git import git
 from LegendX.core.userbot import Userbot
@@ -23,7 +23,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = LegendXBot()
+app = Legendbottx()
 
 # Assistant Client
 userbot = Userbot()
