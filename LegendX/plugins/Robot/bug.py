@@ -8,12 +8,12 @@ from pyrogram.types import (
     Message,
 )
 
-from AnonX import app as Client
+from LegendX import app as Client
 from config import (
     OWNER_ID as owner_id,
 )
 
-SUPPORT = "DevilsHeavenMF"
+SUPPORT = "Legend_Chats"
 
 def content(msg: Message) -> [None, str]:
     text_to_return = msg.text
@@ -45,7 +45,7 @@ async def bug(_, msg: Message):
     thumb = "https://telegra.ph/file/56d1760224589ee370186.jpg"
     
     bug_report = f"""
-**#ʙᴜɢ :** **@anonymous_was_bot**
+**#ʙᴜɢ :** **@XH4REEF_L4DK4_43**
 
 **ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ :** **{mention}**
 **ᴜsᴇʀ ɪᴅ :** **{user_id}**
