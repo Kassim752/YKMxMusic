@@ -8,16 +8,16 @@ from pyrogram.types import (InlineKeyboardButton,
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
-from AnonX import Carbon, YouTube, app
-from AnonX.utils.database import (delete_playlist, get_playlist,
+from LegendX import Carbon, YouTube, app
+from LegendX.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from AnonX.utils.decorators.language import language, languageCB
-from AnonX.utils.inline.playlist import (botplaylist_markup,
+from LegendX.utils.decorators.language import language, languageCB
+from LegendX.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from AnonX.utils.pastebin import Anonbin
-from AnonX.utils.stream.stream import stream
+from LegendX.utils.pastebin import LegendXbin
+from LegendX.utils.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
