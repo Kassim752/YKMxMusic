@@ -12,17 +12,17 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from AnonX import YouTube, app
-from AnonX.core.userbot import assistants
-from AnonX.misc import SUDOERS, pymongodb
-from AnonX.plugins import ALL_MODULES
-from AnonX.utils.database import (get_global_tops,
+from LegendX import YouTube, app
+from LegendX.core.userbot import assistants
+from LegendX.misc import SUDOERS, pymongodb
+from LegendX.plugins import ALL_MODULES
+from LegendX.utils.database import (get_global_tops,
                                        get_particulars, get_queries,
                                        get_served_chats,
                                        get_served_users, get_sudoers,
                                        get_top_chats, get_topp_users)
-from AnonX.utils.decorators.language import language, languageCB
-from AnonX.utils.inline.stats import (back_stats_buttons,
+from LegendX.utils.decorators.language import language, languageCB
+from LegendX.utils.inline.stats import (back_stats_buttons,
                                            back_stats_markup,
                                            get_stats_markup,
                                            overallback_stats_markup,
@@ -180,7 +180,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🍒 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/DevilsHeavenMF) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"🍒 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Legend_Chats) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                 else:
                     msg += f"📌 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
 
