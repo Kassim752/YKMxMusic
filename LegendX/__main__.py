@@ -23,7 +23,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("AnonX").error(
+        LOGGER("LegendX").error(
             "WTF Baby ! Atleast add a pyrogram string, How Cheap..."
         )
         return
@@ -62,7 +62,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await Anon.decorators()
+    await Legend.decorators()
     LOGGER("LegendX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @XH4REEF_L4DK4_43")
     await idle()
 
