@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from AnonX import app
-from AnonX.misc import SUDOERS
-from AnonX.utils.database.memorydatabase import (
+from LegendX import app
+from LegendX.misc import SUDOERS
+from LegendX.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands
