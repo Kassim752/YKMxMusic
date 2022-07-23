@@ -3,7 +3,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton
 
 import config
-from AnonX import app
+from LegendX import app
 
 
 def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
@@ -38,7 +38,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🥺 ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ 🥺",
+                text="🥺 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʙᴀʙʏ 🥺",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             ),
         ],
@@ -48,7 +48,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             ),
         ],
         [
-            InlineKeyboardButton(text="ᴍᴀɪɴᴛᴀɪɴᴇʀ", user_id=OWNER),
+            InlineKeyboardButton(text="💔 ᴍᴀɪɴᴛᴀɪɴᴇʀ 💔", user_id=OWNER),
             InlineKeyboardButton(
                 text="❤️‍🔥 sᴜᴩᴩᴏʀᴛ ❤️‍🔥", url=f"{config.SUPPORT_GROUP}"
             ),
