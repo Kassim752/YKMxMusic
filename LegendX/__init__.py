@@ -1,3 +1,4 @@
+import mysql.connector
 from AnonX.core.bot import AnonXBot
 from LegendX.core.dir import dirr
 from LegendX.core.git import git
