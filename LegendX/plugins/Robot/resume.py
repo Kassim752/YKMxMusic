@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from LegendX import app
-from LegendX.core.call import Anon
+from LegendX.core.call import Legend
 from LegendX.utils.database import is_music_playing, music_on
 from LegendX.utils.decorators import AdminRightsCheck
 
