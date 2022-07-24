@@ -5,7 +5,7 @@ import config
 from config import BANNED_USERS
 from strings import get_command
 from LegendX import YouTube, app
-from LegendX.core.call import Anon
+from LegendX.core.call import Legend
 from LegendX.misc import db
 from LegendX.utils.database import get_loop
 from LegendX.utils.decorators import AdminRightsCheck
