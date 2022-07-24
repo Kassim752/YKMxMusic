@@ -7,7 +7,7 @@ from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
 from LegendX import YouTube, app
-from LegendX.core.call import Anon
+from LegendX.core.call import Legend
 from LegendX.misc import SUDOERS, db
 from LegendX.utils.database import (is_active_chat,
                                        is_music_playing, set_loop,
