@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from LegendX import YouTube, app
-from LegendX.core.call import Anon
+from LegendX.core.call import Legend
 from LegendX.misc import db
 from LegendX.utils import AdminRightsCheck, seconds_to_min
 
