@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from LegendX import LOGGER, app, userbot
-from LegendX.core.call import Anon
+from LegendX.core.call import Legend
 from LegendX.plugins import ALL_MODULES
 from LegendX.utils.database import get_banned_users, get_gbanned
 
