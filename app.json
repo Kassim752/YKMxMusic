@@ -65,7 +65,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5048100752",
+        "value": "5299378072",
         "required": true
       },
       "STRING_SESSION": {
@@ -100,12 +100,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Link of your support group ! Channel ki id mat daal dena bsdk.",
-        "value": "https://t.me/Legend_Chats",
+        "value": "https://t.me/LegendSupport",
         "required": true
       },
       "SUPPORT_CHANNEL": {
         "description": "Link of your telegram channel.",
-        "value": "https://t.me/BrokenWorld_43",
+        "value": "https://t.me/LegendUpdates",
         "required": true
       }
     },
