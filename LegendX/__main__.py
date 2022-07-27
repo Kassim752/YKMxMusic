@@ -63,7 +63,7 @@ async def init():
     except:
         pass
     await Legend.decorators()
-    LOGGER("LegendX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @XH4REEF_L4DK4_43")
+    LOGGER("LegendX").info("Music Bot Started Successfully,")
     await idle()
 
 
