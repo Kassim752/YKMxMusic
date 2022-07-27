@@ -68,7 +68,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data=f"https://t.me/LegendSupport"
+                text=_["CLOSEMENU_BUTTON"], url=f"https://t.me/LegendSupport"
             )
         ],
     ]
@@ -117,7 +117,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data=f"https://t.me/LegendSupport"
+                text=_["CLOSEMENU_BUTTON"], url=f"https://t.me/LegendSupport"
             ),
         ],
     ]
@@ -145,7 +145,7 @@ def stream_markup(_, videoid, chat_id):
                 url=f"{config.SUPPORT_GROUP}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data=f"https://t.me/LegendSupport"
+                text=_["CLOSEMENU_BUTTON"], url=f"https://t.me/LegendSupport"
             )
         ],
     ]
@@ -160,7 +160,7 @@ def telegram_markup(_, chat_id):
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data=f"https://t.me/LegendSupport"
+                text=_["CLOSEMENU_BUTTON"], url=f"https://t.me/LegendSupport"
             ),
         ],
     ]
