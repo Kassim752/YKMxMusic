@@ -11,10 +11,10 @@ TEMP_MONGODB = "mongodb+srv://Teamlegend:ZiddiLegend77@cluster0.uw0peeh.mongodb.
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        "Your Bot Will Work On @ITX_LEGEND Mongo Database..."
+        "Your Bot Will Work On @XH4REEF_L4DK4_43 Mongo Database..."
     )
     temp_client = Client(
-        "AnonX",
+        "LegendX",
         bot_token=config.BOT_TOKEN,
         api_id=config.API_ID,
         api_hash=config.API_HASH,
