@@ -59,8 +59,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✩ ᴍᴇɴᴜ ✩",
-                callback_data=f"PanelMarkup {videoid}|{chat_id}",
+                text="➕ ᴘʟᴀʏʟɪsᴛ ➕",
+                callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
                 text="🥀 sᴜᴩᴩᴏʀᴛ 🥀", url=f"{config.SUPPORT_GROUP}"
