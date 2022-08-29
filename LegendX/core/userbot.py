@@ -48,8 +48,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("LegendSupport")
-                await self.one.join_chat("LegendUpdates")
+                await self.one.join_chat("ChatColony")
+                await self.one.join_chat("ChatColony")
             except:
                 pass
             assistants.append(1)
@@ -78,8 +78,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("LegendSupport")
-                await self.two.join_chat("LegendUpdates")
+                await self.two.join_chat("ChatColony")
+                await self.two.join_chat("ChatColony")
             except:
                 pass
             assistants.append(2)
@@ -108,8 +108,8 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("LegendSupport")
-                await self.three.join_chat("LegendUpdates")
+                await self.three.join_chat("ChatColony")
+                await self.three.join_chat("ChatColony")
             except:
                 pass
             assistants.append(3)
@@ -138,8 +138,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("LegendSupport")
-                await self.four.join_chat("LegendUpdates")
+                await self.four.join_chat("ChatColony")
+                await self.four.join_chat("ChatColony")
             except:
                 pass
             assistants.append(4)
@@ -168,8 +168,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("LegendSupport")
-                await self.five.join_chat("LegendUpdates")
+                await self.five.join_chat("ChatColony")
+                await self.five.join_chat("ChatColony")
             except:
                 pass
             assistants.append(5)
