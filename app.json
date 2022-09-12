@@ -1,5 +1,5 @@
 {
-    "name": "⌜ ʟᴇɢᴇɴᴅ ✘ ᴍᴜsɪᴄ ⌟",
+    "name": "˹γκм ✘ мυѕιϲ˼",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://telegra.ph/file/51fc0d0b6b99b10379709.jpg",
     "keywords": [
@@ -50,7 +50,7 @@
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "⌜ ʟᴇɢᴇɴᴅ ✘ ᴍᴜsɪᴄ ⌟",
+        "value": "˹γκм ✘ мυѕιϲ˼",
         "required": false
       },
       "SPOTIFY_CLIENT_ID": {
@@ -100,12 +100,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Link of your support group ! Channel ki id mat daal dena bsdk.",
-        "value": "https://t.me/ChatColony",
+        "value": "https://t.me/YaaroKiMehfil_YKM",
         "required": true
       },
       "SUPPORT_CHANNEL": {
         "description": "Link of your telegram channel.",
-        "value": "https://t.me/ChatColony",
+        "value": "https://t.me/YaaroKiMehfil_YKM",
         "required": true
       }
     },
